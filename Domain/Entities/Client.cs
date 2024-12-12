@@ -12,7 +12,7 @@ public class Client : BaseEntity
 
   public Client() { }
 
-  public Client(string name, string cnpj, string phone, string email) 
+  public Client(string name, string cnpj, string? phone, string? email) 
   {
     Name = SpellCheck.CapitalizeName(name);
     CNPJ = SpellCheck.CleanSpecialCharacters(cnpj);
